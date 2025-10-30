@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* Body and General Layout */
+body {
+    /* background-color: #d1f5be; */
+    background-color: #f0fff1;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Header Section */
+.webname {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.webname h1 {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #147930;
+}
+
+.webname p {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #72796F;
+}
+
+/* Form Container */
+.form-container {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px
+}
+
+.form-container h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #147930;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    /* background-color: #147930; */
+    background-color: #1a8c40;
+    transform: scale(1.02);
+}
+
+/* Info Note */
+.info-note {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Footer Section */
+footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+    /* color: #aaa; */
+    color: #6c757d;
+}
+
+
+
+

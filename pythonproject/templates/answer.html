@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultat de la recommandation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .result-container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .result-card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1 class="text-center">Résultat de la recommandation</h1>
+        <p><strong>Nom:</strong> {{ name }}</p>
+        <p><strong>Profession:</strong> {{ profession }}</p>
+        <p><strong>Description de l'utilisation:</strong> {{ desc }}</p>
+
+        <div class="result-card card">
+            <div class="card-header">
+                <h4>PC Recommandé:</h4>
+            </div>
+            <div class="card-body">
+                <p><strong>Nom du produit:</strong> {{ product['product_name'] }}</p>
+                <p><strong>Référence:</strong> {{ product['product_reference'] }}</p>
+                <p><strong>Description:</strong> {{ product['product_desc'] }}</p>
+                <p><strong>Carte graphique:</strong> {{ product['graphics'] }}</p>
+                <p><strong>Prix:</strong> {{ product['price'] }} TND</p>
+                <p><strong>État:</strong> {{ canbuy }}</p>
+            </div>
+        </div>
+
+        <a href="/" class="btn btn-secondary">Retour</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

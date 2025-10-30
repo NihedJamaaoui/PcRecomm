@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommandation PC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="text-center">Formulaire de Recommandation PC</h1>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="username">Nom</label>
+                <input type="text" id="username" name="username" class="form-control" placeholder="Votre nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="function">Profession</label>
+                <input type="text" id="function" name="profession" class="form-control" placeholder="Votre profession" required>
+            </div>
+
+            <div class="form-group">
+                <label for="income">Budget</label>
+                <input type="number" id="income" name="budget" class="form-control" placeholder="Votre budget (en TND)" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description de l'utilisation</label>
+                <textarea id="description" name="description" class="form-control" rows="5" placeholder="Description de vos besoins (ex: jeux, travail, design, etc.)" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="graphics">Exigence de carte graphique</label>
+                <input type="text" id="graphics" name="graphics_requirement" class="form-control" placeholder="Carte graphique souhaitée (ex: NVIDIA, AMD)" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Soumettre</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
